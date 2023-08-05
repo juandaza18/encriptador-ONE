@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagenes/logo_icono.jpg">
+    <title>Encriptador de texto - ALURA</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img alt="Logo de Alura" src="Imagenes/Logo.png"></h1>
+    </header>
+    <main>
+        <section class="ingreso-datos">
+            <textarea class="text-area" cols="20" rows="1" placeholder="Ingrese el texto aquí"></textarea>
+            <section class="caja-botones">
+                <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+        </section>
+        <section class="salida-datos">
+            <textarea class="mensaje" cols="auto" rows="auto"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <p class="nombre">Desarrollado por Juan Daza para ONE</p>
+    </footer>
+</body>
+</html>
